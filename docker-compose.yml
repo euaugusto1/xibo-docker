@@ -57,7 +57,8 @@ services:
         restart: always
 
     cms-quickchart:
-        image: jonatasbaldin/quickchart:latest
+        build:
+            context: https://github.com/typpo/quickchart.git#master
         restart: always
 
 volumes:
